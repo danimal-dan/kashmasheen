@@ -1,0 +1,16 @@
+@import 'reset.scss';
+@import '~bulma/sass/utilities/_all.sass';
+@import '~bulma/sass/grid/columns.sass';
+
+html, body {
+  background: #404353;
+}
+
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  min-height: 100vh;
+}
