@@ -29,13 +29,16 @@ export default {
 </script>
 
 <style lang="scss">
+$atm-button-color: #ddd;
+$atm-button-active-color: #ccc;
+
 .atm-button {
   content: '';
-  background: #ddd;
+  background: $atm-button-color;
   display: inline-block;
   height: 70px;
   width: 100px;
-  border: #ddd;
+  border: $atm-button-color;
   position: relative;
   cursor: pointer;
 
@@ -54,7 +57,7 @@ export default {
   }
 
   &:active {
-    background: #ccc;
+    background: $atm-button-active-color;
   }
 
   &.atm-button-left {
@@ -63,12 +66,12 @@ export default {
     border-radius: 10px 0 0 10px;
 
     &:before {
-      border-left: 20px solid #ddd;
+      border-left: 20px solid $atm-button-color;
       right: -20px;
     }
 
     &:active:before {
-      border-left-color: #ccc;
+      border-left-color: $atm-button-active-color;
     }
   }
 
@@ -78,12 +81,12 @@ export default {
     border-radius: 0 10px 10px 0;
 
     &:before {
-      border-right: 20px solid #ddd;
+      border-right: 20px solid $atm-button-color;
       left: -20px;
     }
 
     &:active:before {
-      border-right-color: #ccc;
+      border-right-color: $atm-button-active-color;
     }
   }
 }
